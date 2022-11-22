@@ -51,7 +51,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-bg: url("night.jpg");
 }
 
 *,
@@ -74,7 +74,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-image: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -617,11 +617,12 @@ progress {
 }
 
 .container{
-  width: 40%;
+  width: 50%;
   max-height: max-content;
   margin-top: 10px;
-  background-color: #8BC6EC;
-  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  background-color: #636c7b;
+  background-image: linear-gradient(315deg, #636c7b 0%, #5b8b94 50%, #845da5 100%);
+
 }
 .btn{
   margin-bottom: 20px;
@@ -634,7 +635,6 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
@@ -671,9 +671,7 @@ progress {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  margin-bottom: 20px;
 }
 .row > * {
   flex-shrink: 0;

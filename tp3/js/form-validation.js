@@ -29,9 +29,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if ((nom && prenom && date && adresse && mail) != "") {
             console.log("if true")
             myModal.show();
-            document.getElementById("modal-title").innerHTML = "Bienvenue " + prenom;
-
-            document.getElementById("modal-core-msg").innerHTML += `Vous êtes né le ${date} et vous habitez à : <br> <a class='link' href='http://maps.google.com/maps?'> <br> ${img} <br> ${adresse} </a>`;
+            document.getElementById("modal-title").innerHTML = "Bienvenu(e) " + prenom + nom;
+            document.getElementById("modal-core-msg").innerHTML += `Vous êtes né(e) le ${date} et vous habitez à : <br> <a class='link' href='http://maps.google.com/maps?'> <br> ${img} <br> ${adresse} </a>`;
             document.getElementById("btn-close").onclick = function closeModal() {
                 console.log("closing")
                 myModal.hide();
@@ -56,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         date = date.replace("-", "").replace("-", "").trim();
         console.log(dateString + " " + date)
         if (dateString < date) {
+            document.getElementById("modal-error-msg2").innerHTML = "Vous etes né(e) dans le futur!!";
             return "";
         } else {
             return document.getElementById("date").value;

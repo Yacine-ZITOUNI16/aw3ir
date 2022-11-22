@@ -4,15 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/formulaire.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/form-validation.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
 
-  <title>Document</title>
+  <title>TP3 AW</title>
 </head>
 
 <body>
@@ -20,94 +16,73 @@
 
   <div class="container">
     <h1>TP3 AW</h1>
-    <h5>Avec bootstrap 5</h5>
+    <h5>Avec bootstrap 5</h5><br>
     <form id="formAW" name="form">
       <div class="row">
-
-        <p>
           <div class="col">
-            <label class="form-label" for="nom">Nom</label> :  
+            <strong><label class="form-label" for="nom">Nom :</label></strong>  
         </div>
           <div class="col">
-            <input type="text" class="form-control inputAW" name="nom" id="nom" size="30"
-              minlength="4" pattern="[a-zA-Z]+" maxlength="20" class="inputAW" />
+            <input type="text" class="form-control" name="nom" id="nom" size="30" minlength="5"/>
           </div>
-        </p>
       </div>
 
       <div class="row">
-
-        <p>
           <div class="col">
-
-            <label class="form-label" for="prenom">Prénom</label> :
+            <strong><label class="form-label" for="prenom">Prénom :</label></strong>
           </div>
           <div class="col">
-
-            <input type="text" class="form-control inputAW" name="prenom" id="prenom" size="30" minlength="4" maxlength="20" class="inputAW" />
-          </div>
-
-        </p>
+            <input type="text" class="form-control" name="prenom" id="prenom" size="30" minlength="5" />
+          </div>        
       </div>
+
       <div class="row">
-
-        <p>
           <div class="col">
-
-            <label for="date">Date de naissance</label> :
+          <strong><label for="date">Date de naissance :</label></strong>
           </div>
           <div class="col">
-
-            <input type="date" name="date" id="date" placeholer="JJ/MM/AAAA" class="form-control inputAW" />
+            <input type="date" name="date" id="date" placeholer="JJ/MM/AAAA" class="form-control" />
           </div>
-        </p>
       </div>
 
       <div class="row">
         <div class="col">
-          <p>
-            <label class="form-label" for="adresse">Adresse</label> :
+        <strong><label class="form-label" for="adresse">Adresse :</label></strong>
         </div>
         <div class="col">
-          <input type="text" name="adresse" id="adresse" size="30" minlength="5" maxlength="50"
-            class="form-control inputAW" />
-          </p>
+          <input type="text" name="adresse" id="adresse" size="30" minlength="5" class="form-control"/>
         </div>
       </div>
+
       <div class="row">
         <div class="col">
-          <p>
-            <label class="form-label" for="mail">Mail</label> :
+        <strong><label class="form-label" for="mail">Mail :</label></strong>
         </div>
         <div class="col">
-          <input type="email" name="mail" id="mail" size="30" minlength="4"
-            maxlength="30" class="form-control inputAW" />
-          </p>
+          <input type="email" name="mail" id="mail" size="30" minlength="5" class="form-control" />
         </div>
       </div>
-      <br />
-      <input type="submit" class="btn btn-light" value="Valider" id="submit">
-
+      <br/>
+      <center><input type="submit" class="btn btn-light" value="Valider" id="submit"></center>
     </form>
-
-
   </div>
+
   <div class="modal" tabindex="-1" role="dialog" id="myModal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 id="modal-title" class="modal-title">Erreur!!</h5>
-
         </div>
         <div id="modal-body" class="modal-body">
           <p id="modal-error-msg"></p>
+          <p id="modal-error-msg2"></p>
           <p id="modal-core-msg"></p>
           <div id="error"></div>
           <br />
           <div id="resultat"></div>
         </div>
         <div class="modal-footer">
-          <button type="submit" id="btn-close" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+          <button type="submit" id="btn-close" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
       </div>
     </div>
