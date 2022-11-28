@@ -125,7 +125,7 @@ La géolocalisation vous donnera la **latitude** et la **longitude** de l’util
 
 Afficher une image (dans le code JS ci-dessus ça s'affiche dans une DIV avec id="map") de Google Maps centrée sur ces coordonnées GPS (documentation de l’API google maps)
 
-URL de l’image : https://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg
+URL de l’image : **https://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg**
 
 ## 4. Afficher le nombre de caractère saisie
 
