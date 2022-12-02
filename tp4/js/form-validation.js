@@ -33,6 +33,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
             document.getElementById("modal-core-msg").innerHTML += `Vous êtes né(e) le ${date} et vous habitez à : <br> <a class='link' href='http://maps.google.com/maps?'> <br> ${img} <br> ${adresse} </a>`;
             document.getElementById("btn-close").onclick = function closeModal() {
                 console.log("closing")
+                document.querySelector("table tbody").innerHTML=document.querySelector("table tbody").innerHTML+`
+                <tr>
+                <td>${nom}</td>
+                <td>${prenom}</td>
+                <td>${date}</td>
+                <td>${adresse}</td>
+                <td>${mail}</td>
+                </tr>
+                `                
                 myModal.hide();
             }
         } else {
